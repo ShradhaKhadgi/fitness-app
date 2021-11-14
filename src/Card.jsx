@@ -5,8 +5,8 @@ const Card = (props) =>
     
     return(
         <>
-        <div className="card">       
-            <img src={props.img} alt="Fitness_Photo"/>
+        <div className="card" key={props.id}>       
+            <img src={props.img} alt="Fitness"/>
             <h2 className="card_title">{props.title}</h2>
             <div class="button_style">
             <button onClick={()=>{setDetails(true);}}>Learn more</button>
@@ -15,7 +15,7 @@ const Card = (props) =>
         {openDetails && 
             <div className="main">
             <div className="container">
-                <img src={props.img} alt="photo" className="cont_img"/>
+                <img src={props.img} alt="Fitness" className="cont_img"/>
                 <div className="content">
                 <h2 className="cont_heading">{props.title}</h2>
                 <p className="cont_para">{props.desc}</p>

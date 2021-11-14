@@ -1,11 +1,14 @@
 import React from "react";
+// import img1 from './images/img4.jpeg';
+// import img2 from './images/img5.jpg';
+// import img3 from './images/img6.jpg';
 const Home = () =>
 {
     return(
         <>
         <div className="middle_section">
         <div className="ms_img">   
-        <img src="images/img1.jpeg" alt="fitness-image"/>
+        <img src={require('./images/img4.jpeg').default} alt="fitness"/>
         </div>
         <div className="ms_text"> 
         <h2>Welcome to <span style={{color: "#5990E0"}}>Fitness App</span></h2><br/>
@@ -33,7 +36,7 @@ const Home = () =>
         </ul>    
         </div>
         <div className="div_img1"> 
-        <img src="images/img2.jpg" alt="fitness-image"/>
+        <img src={require('./images/img5.jpg').default} alt="fitness"/>
         </div>
         </div>
         <h1 style={{margin: "15% 0 10% 0"}}>Why Exercise? </h1>
@@ -48,7 +51,7 @@ const Home = () =>
         </ul>
         </div>
         <div className="div_img2">
-        <img src="images/img3.jpg" alt="fitness-image"/>
+        <img src={require('./images/img6.jpg').default} alt="fitness"/>
         </div>
         </div>
         </div>

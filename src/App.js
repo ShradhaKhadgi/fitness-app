@@ -6,7 +6,7 @@ import Cardio from "./Cardio";
 import Strenth from "./Strength";
 import Flexibility from "./Flexibility";
 import Yoga from "./Yoga";
-import { Route, Switch } from "react-router";
+import { Redirect, Route, Switch } from "react-router";
 const App = () =>{
     return(
         <>
@@ -18,6 +18,9 @@ const App = () =>{
             <Route exact path='/cardio' component={Cardio}/>
             <Route exact path='/strength' component={Strenth}/>
             <Route exact path='/flexibility' component={Flexibility}/> 
+            <Route path="*">
+                <Redirect to="/"/>
+            </Route>
         </Switch>
         </>
     );
