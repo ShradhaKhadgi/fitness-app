@@ -12,7 +12,7 @@ const Menu = () =>
         <>
         <div className= {showMenu ? "menu_style mobile_menu" : "menu_style"}>
         <ul>
-        <li><NavLink exact activeClassName="active_class"c to='/' onClick={Menu}>Home</NavLink></li>
+        <li><NavLink exact activeClassName="active_class" to='/' onClick={Menu}>Home</NavLink></li>
         <li><NavLink exact activeClassName="active_class" to='/yoga' onClick={Menu}>Yoga</NavLink></li>
         <li><NavLink exact activeClassName="active_class" to='/cardio' onClick={Menu}>Cardio</NavLink></li>
         <li><NavLink exact activeClassName="active_class" to='/strength' onClick={Menu}>Strength</NavLink></li>
